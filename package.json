@@ -1,0 +1,28 @@
+{
+  "name": "@bookd/twenty-crm",
+  "version": "2.9.0-bookd.1",
+  "private": true,
+  "description": "book'd CRM - Twenty CRM fork with managed AI agents",
+  "scripts": {
+    "dev": "yarn workspace @twenty/server dev",
+    "build": "yarn workspaces foreach run build",
+    "start:prod": "yarn workspace @twenty/server start:prod",
+    "test": "yarn workspaces foreach run test",
+    "lint": "yarn workspaces foreach run lint",
+    "db:migrate": "yarn workspace @twenty/server db:migrate",
+    "db:seed": "yarn workspace @twenty/server db:seed"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": "^24.5.0",
+    "yarn": "^4.0.2"
+  },
+  "packageManager": "yarn@4.0.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kingvelazquez013/twenty-bookd.git"
+  },
+  "license": "UNLICENSED"
+}
